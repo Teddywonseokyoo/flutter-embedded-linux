@@ -174,6 +174,7 @@ void ELinuxEGLSurface::PopulateExistingDamage(const intptr_t fbo_id,
       0, 0, static_cast<double>(width_px_), static_cast<double>(height_px_)};
   existing_damage->damage = existing_damage_map_[fbo_id];
 
+/*
   if (age > 1) {
     --age;
     // join up to (age - 1) last rects from damage history
@@ -197,6 +198,7 @@ void ELinuxEGLSurface::PopulateExistingDamage(const intptr_t fbo_id,
       }
     }
   }
+*/
 }
 
 // Auxiliary function used to transform a FlutterRect into the format that is
